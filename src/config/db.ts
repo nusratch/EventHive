@@ -1,7 +1,8 @@
 import { Pool } from "pg";
-
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+import env from "./env.js";
+const pool = new Pool 
+({
+  connectionString: env.DATABASE_URL,
  
 });
 
